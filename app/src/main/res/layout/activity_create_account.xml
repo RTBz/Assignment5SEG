@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="15dp"
+    tools:context=".CreateAccountActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/createAccountView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="108dp"
+                tools:layout_editor_absoluteY="7dp" />
+
+            <TextView
+                android:id="@+id/selectAccountTypeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Account Type"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="-1dp"
+                tools:layout_editor_absoluteY="48dp" />
+
+            <RadioGroup
+                android:id="@+id/roleProvider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/patientButton"
+                    android:layout_width="91dp"
+                    android:layout_height="22dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Patient"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/employeeButton"
+                    android:layout_width="99dp"
+                    android:layout_height="21dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Employee"
+                    android:textSize="12sp" />
+            </RadioGroup>
+            <EditText
+                android:id="@+id/createClinicName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="please enter the clinic's name here"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/insuranceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="please input an insurance"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/paymentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="please input a payment method"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/firstNameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                tools:layout_editor_absoluteX="-1dp"
+                tools:layout_editor_absoluteY="107dp" />
+
+            <EditText
+                android:id="@+id/firstNameText"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="126dp" />
+
+            <TextView
+                android:id="@+id/lastNameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="160dp" />
+
+            <EditText
+                android:id="@+id/lastNameText"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="179dp" />
+
+            <TextView
+                android:id="@+id/dateOfBirthView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <EditText
+                android:id="@+id/dateOfBirthText"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="230dp" />
+
+            <TextView
+                android:id="@+id/phoneNumberView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="264dp" />
+
+            <EditText
+                android:id="@+id/phoneNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="-2dp"
+                tools:layout_editor_absoluteY="283dp" />
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="address" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/emailAddressView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="315dp" />
+
+            <EditText
+                android:id="@+id/emailAddressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="334dp" />
+
+            <TextView
+                android:id="@+id/usernameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username " />
+
+            <EditText
+                android:id="@+id/usernametext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="334dp" />
+
+            <TextView
+                android:id="@+id/passwordView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="602dp" />
+
+            <EditText
+                android:id="@+id/passwordtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="622dp" />
+
+            <TextView
+                android:id="@+id/confirmPasswordView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="648dp" />
+
+            <EditText
+                android:id="@+id/confirmPasswordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="667dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/returntologinbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Return"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteX="149.5dp"
+                    tools:layout_editor_absoluteY="698dp" />
+
+                <Button
+                    android:id="@+id/signupbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Account"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteX="149dp"
+                    tools:layout_editor_absoluteY="698dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

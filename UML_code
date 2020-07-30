@@ -1,0 +1,106 @@
+class Account
+{
+  userName;
+  firstName;
+  lastName;
+  dateOfBirth;
+  phoneNumber;
+  email;
+  country;
+  province;
+  city;
+  street;
+  postalCode;
+  password;
+  accountType;
+  accountID;
+    * -- * Service;
+ 
+}
+
+class AdminAccount
+{
+  public void createService(){
+
+}
+public void deleteService(Service service){
+
+}
+public void editService(Service service,Service newservice){
+
+}
+public void setServices(List<Service> arg0){
+
+}
+  public void deleteAccount(String username){}
+  
+  public boolean exists(Service) {}
+  
+isA Account;
+  }
+
+class EmployeeAccount
+{
+  internal String clinic;
+public Clinic getClinic(){};
+  isA Account;
+}
+
+class PatientAccount
+{
+  isA Account;
+}
+
+class Service
+{
+  String DOCTOR="doctor";
+  String NURSE="nurse";
+  String STAFF="staff";
+  name;
+ provider;
+
+    double price;
+}
+
+
+
+
+class Shift
+{
+  internal Hour startingHour;
+  internal Hour endingHour;
+    internal Date date;
+  
+    public Date getDate(){}
+  public Hour getStartingHour(){}
+  public Hour getEndingHour(){}
+  public boolean equals(Shift obj){}
+  public String toString(){}
+  *--* EmployeeAccount;
+}
+
+class Hour
+{
+  Integer hour;
+  Integer minute;
+        public String toString(){}
+  * -- * Shift;
+}
+
+class Date
+{
+  internal Integer day;
+  internal Integer month;
+  internal Integer year;
+  
+  public Integer getDay(){}
+  public Integer getMonth(){}
+  public Integer getYear(){}
+  public boolean equals(Date obj) {}
+  public String toString(){}
+  
+* -- * Shift;
+}
+
+
+

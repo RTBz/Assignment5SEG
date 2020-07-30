@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="10dp"
+android:layout_marginRight="20dp"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".EmployeeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/Sync"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="synchronise" />
+
+                <Switch
+                    android:id="@+id/employeeInfoChip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="show employee information" />
+
+                <Switch
+                    android:id="@+id/AffiliatedClinicChip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="show affiliated clinic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emplyeeInfolayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="enter email here"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="enter phone number here"
+                    android:inputType="phone"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/insuranceToAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="please add an insurance type"
+                        android:inputType="textPersonName" />
+
+                    <ListView
+                        android:id="@+id/insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/paymentToAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="please add a payment method"
+                        android:inputType="textPersonName" />
+
+                    <ListView
+                        android:id="@+id/payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></ListView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/emplyeeInfoSaveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AffiliatedClinicLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ClinicName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/clinicServiceList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clinic services" />
+
+                <ListView
+                    android:id="@+id/ClinicServiceList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+
+                <TextView
+                    android:id="@+id/AvailableServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avaible services" />
+
+                <ListView
+                    android:id="@+id/ServiceList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:id="@+id/calendarSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="calendar" />
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

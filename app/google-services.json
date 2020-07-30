@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "645890609211",
+    "firebase_url": "https://wicg1-768ab.firebaseio.com",
+    "project_id": "wicg1-768ab",
+    "storage_bucket": "wicg1-768ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645890609211:android:6c86254bce8928b6190c1e",
+        "android_client_info": {
+          "package_name": "com.example.wicg1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645890609211-hmpnuss4jro7jltrqs5tjjufmkt943ff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wicg1",
+            "certificate_hash": "c9f28bcc04a4fdc4a16e4fb443d117e868715783"
+          }
+        },
+        {
+          "client_id": "645890609211-crsic1emjenko729en80h43aa6u66cuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzIug4nAjQDm72NxUSGUIWw0Wv5XrulE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645890609211-crsic1emjenko729en80h43aa6u66cuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
